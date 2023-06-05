@@ -1,14 +1,43 @@
 # Selection Sort
 
-## Summary
-
-Chapter 2 introduces two simple but ubiquitous data structures - arrays and linked lists - and the selection sort algorithm. 
-The chapter discusses the time complexity of different operations for arrays and linked lists and of the selection sort algorithm.
-
 ## Key Concepts
 
+- Memory
 - Arrays and Linked Lists
 - Selection Sort
+
+## Summary
+
+### Memory
+Imagine you are going to an event and need to check your things. A chest of drawers is available. Each drawer can hold only one element. You want to store two things, so you ask for two drawers.  
+  
+This is basically how your computer's memory works. Your computer's memory can be thought of as a giant set of drawers, and each drawer has a memory address. Each time you want to store an item in memory, you ask the computer for some space and it gives you a memory address where you can store your item.
+
+### Arrays and Linked Lists
+#### Memory
+- Arrays - require contiguous memory
+- Linked Lists - do not require contiguous memory, instead each element contains an address to the next element in the list
+#### Reading
+- Arrays - can read any element instantly since all addresses are contiguous; O(1) run time
+- Linked Lists - each element must be sequentially navigated to find the next elements address; O(*n*) run time
+#### Insertion
+- Arrays - will need to find a slot in memory large enough for all elements and move the location of all downstream elements to new memory locations; O(*n*) run time
+- Linked Lists - update easily without having to find memory or move the location of other elements; O(1) run time
+#### Deletions
+- Arrays - will need to move the location of all downstream elements; O(*n*) run time
+- Linked Lists - only need to update one element; O(1) run time
+
+| Operation     | Array      | Linked List |
+| ------------- | ---------- | ----------- |
+| Reading       | O(1)       | O(n)        |
+| Insertion     | O(n)       | O(1)        |
+| Deletion      | O(n)       | O(1)        |
+
+
+### Selection Sort
+Selection sort is a simple sorting algorithm that repeatedly finds the smallest element from an unsorted portion of an array and swaps it with the element at the beginning of the unsorted portion. This process continues until the entire array is sorted.  
+  
+Since finding the smallest element in an array takes O(*n*) time, and the smallest element must be found *n* times for an array with *n* elements, selection sort's runtime is O(*n*^2).
 
 ## Code Snippets
 
