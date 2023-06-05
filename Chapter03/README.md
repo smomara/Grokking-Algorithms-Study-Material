@@ -73,10 +73,6 @@ What information can you give me, just based on this call stack?
 Suppose you accidentally write a recursive function that runs forever. As you saw, your computer allocates memory on the stack for each function call. What happens to the stack when your recursive function runs forever?  
 *Answer*: The stack grows forever. Each program has a limited amount of space on the call stack. When your program runs out of space (which it eventually will), it will exit with a stack-overflow error.
 
-3. **Exercise 2.3**: 
-Let’s run a thought experiment. Suppose Facebook keeps a list of usernames. When someone tries to log in to Facebook, a search is done for their username. If their name is in the list of usernames, they can log in. People log in to Facebook pretty often, so there are a lot of searches through this list of usernames. Suppose Facebook uses binary search to search the list. Binary search needs random access - you need to be able to get to the middle of the list of usernames instantly. Knowing this, would you implement the list as an array or a linked list?          
-*Answer*: A sorted array. Arrays give you random acess - you can get an element from the middle of the array instantly. You can't do that with linked lists. To get to the middle element in a linked list, you'd have to start at the first element and follow all the linkes down to the middle element.
-
 ## Recap
 
 - Recursion is when a function calls itself.
