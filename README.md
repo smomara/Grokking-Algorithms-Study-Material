@@ -15,10 +15,10 @@ This repository contains my study material for the book _Grokking Algorithms_ by
 9. [Dynamic Programming](./Chapter09/README.md)
 10. [K-Nearest Neighbors](./Chapter10/README.md)
 
-Each chapter folder contains:
+Each chapter's README.md file contains:
 
-- `README.md`: Chapter summary, key concepts and a recap.
-- `code/`: Code snippets and examples in various programming languages.
-- `exercises/`: Exercises and their solutions related to the chapter.
+- Chapter summary, key concepts, and a recap
+- Code snippets and examples
+- Exercises and their solutions related to the chapter
 
 Happy learning!
