@@ -1,16 +1,26 @@
 # Introduction to Algorithms
 
-## Summary
-
-Chapter 1 provides a foundation for the rest of the book by introducing the fundamental concepts of algorithms and their roles in problem-solving. 
-It emphasizes the importance of selecting the right algorithm to optimize efficiency 
-and introduces the concept of Big O notation as a tool for evaluating algorithm performance.
-
 ## Key Concepts
 
 - Algorithms
+- Binary Search
 - Efficiency and Optimization
 - Big O Notation
+
+## Summary
+
+### Introduction
+An algorithm is a set of instructions for accomplishing a task
+
+### Binary Search
+Binary search is an algorithm used to search for a specific target value within a *sorted* array. The algorithm works by repeatedly dividing the space in half, narrowing down the possible range of values until the target value is found or determined to be absent.  
+  
+A binary search is more efficient than a simple search because it reduces the range of possible values by half in each step. In contrast, a simple search sequentially checks every single value step by step. For any list of *n* values, a binary search will take log<sub>2</sub> *n* steps, whereas a simple search will take *n* steps.
+
+### Big O Notation
+Big O notation is special notation that tells you how fast an algorithm is. Algorithm speed isn't measured in seconds, but in growth of the number of operations. Therefore, Big O notation tells us how quickly the run time of an algorithm increases as the size of the input increases.  
+  
+For example, binary search has a run time of O(log *n*) and simple search has a run time of O(*n*). O(log *n*) is faster than O(*n*) and it gets even faster as the list of items you're searching grows.
 
 ## Code Snippets
 
