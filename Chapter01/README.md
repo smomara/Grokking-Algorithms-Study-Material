@@ -22,6 +22,14 @@ Big O notation is special notation that tells you how fast an algorithm is. Algo
   
 For example, binary search has a run time of O(log *n*) and simple search has a run time of O(*n*). O(log *n*) is faster than O(*n*) and it gets even faster as the list of items you're searching grows.
 
+Here are some commong Big O run times arranged in speed order:
+- **O(1)** constant time
+- **O(log *n*)** log time
+- **O(*n*)** linear time
+- **O(*n* log *n*)** log linear time
+- **O(*n*<sup>2</sup>)** quadratic time
+- **O(*n*!)** factorial time
+
 ## Code Snippets
 
 
