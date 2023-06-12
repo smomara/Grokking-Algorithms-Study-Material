@@ -100,7 +100,6 @@ while node is not None: # If all nodes have been processed, the loop is done
 ```
 
 ## Exercises
-For the next two exercises, run a breadth-first search and find the solution.
 1. **Exercise 7.1**
 In each of these graphs, what is the weight of the shortest path from start to finish?
 
